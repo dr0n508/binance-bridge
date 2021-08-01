@@ -53,12 +53,19 @@
       &:last-child {
         border-bottom: none;
       }
-      .network-title {
+      .network-title, .suspended-title  {
         padding: 0;
         margin: 0;
       }
+
       &:hover{
         background-color: rgba(240, 185, 11, 0.06);
+      }
+    }
+    .dropdown-item.disabled {
+      cursor: initial;
+      .suspended-title, .network-title {
+        opacity: .3;
       }
     }
     .dropdown-item.active, .dropdown-item:active {
@@ -112,6 +119,11 @@
     margin-top: 16px;
     font-size: .875em;
     padding-right: 56px;
+    line-height: 1.2;
+  }
+  .suspended-title {
+    margin-top: 16px;
+    font-size: .875em;
     line-height: 1.2;
   }
 }
