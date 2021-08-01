@@ -1,4 +1,8 @@
+.title-select-box {
+  font-size: .75em;
+}
 .selectBox {
+  margin-bottom: 1em;
   box-shadow: 0px 2px 8px rgba(128,128,128,.3);
   border-radius: 0.5em;
   position: relative;
@@ -26,15 +30,50 @@
     }
   }
   .dropdown-menu {
-    transition-duration: 300ms;
+    padding: 0;
+    min-width: 250px;
+    max-height: 250px;
+    box-shadow: 0px 2px 8px rgba(128,128,128,.3);
+    border-radius: 0.5em;
+    border: none;
     opacity: 0;
     visibility: hidden;
     display: block;
     top: 100%;
-    max-height: 250px;
     z-index: -1;
     overflow-y: auto;
     transform: translateY(-15%);
+    transition-duration: 300ms;
+    .network-box {
+      min-height: auto;
+    }
+    .dropdown-item  {
+      padding: 1em;
+      border-bottom: solid 1px $bg;
+      &:last-child {
+        border-bottom: none;
+      }
+      .network-title {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .dropdown-item.active, .dropdown-item:active {
+      text-decoration: none;
+      position: relative;
+      color: $text;
+      background: none;
+      &:before {
+        position: absolute;
+        content: url("../img/check-icon.svg");
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        right: 1em;
+        top: 50%;
+        margin-top: -12px;
+      }
+    }
   }
   &.show {
     .btn-dropdown::after {
@@ -46,12 +85,8 @@
       opacity: 1;
       z-index: 1;
       transform: translateY(0);
-      .dropdown-item  {
-        padding: 1em;
-      }
-      .dropdown-item.active, .dropdown-item:active {
-        text-decoration: none;
-      }
+
+
     }
   }
 }

@@ -19,7 +19,7 @@
   border-color: whitesmoke;
   -webkit-border-radius: 0.571429em;
           border-radius: 0.571429em; }
-  .btn.btn-secondary.custom-btn svg {
+  .btn.btn-secondary.custom-btn .video-svg {
     margin-right: 0.285714em; }
   .btn.btn-secondary.custom-btn:hover {
     color: #1e2026;
@@ -64,7 +64,11 @@ input.form-control {
 .progress-bar.custom-progress-bar {
   background-color: #f0b90b; }
 
+.title-select-box {
+  font-size: .75em; }
+
 .selectBox {
+  margin-bottom: 1em;
   -webkit-box-shadow: 0px 2px 8px rgba(128, 128, 128, 0.3);
           box-shadow: 0px 2px 8px rgba(128, 128, 128, 0.3);
   -webkit-border-radius: 0.5em;
@@ -96,19 +100,50 @@ input.form-control {
     .selectBox .btn-dropdown:hover {
       background-color: #f8d12f; }
   .selectBox .dropdown-menu {
-    -webkit-transition-duration: 300ms;
-         -o-transition-duration: 300ms;
-            transition-duration: 300ms;
+    padding: 0;
+    min-width: 250px;
+    max-height: 250px;
+    -webkit-box-shadow: 0px 2px 8px rgba(128, 128, 128, 0.3);
+            box-shadow: 0px 2px 8px rgba(128, 128, 128, 0.3);
+    -webkit-border-radius: 0.5em;
+            border-radius: 0.5em;
+    border: none;
     opacity: 0;
     visibility: hidden;
     display: block;
     top: 100%;
-    max-height: 250px;
     z-index: -1;
     overflow-y: auto;
     -webkit-transform: translateY(-15%);
         -ms-transform: translateY(-15%);
-            transform: translateY(-15%); }
+            transform: translateY(-15%);
+    -webkit-transition-duration: 300ms;
+         -o-transition-duration: 300ms;
+            transition-duration: 300ms; }
+    .selectBox .dropdown-menu .network-box {
+      min-height: auto; }
+    .selectBox .dropdown-menu .dropdown-item {
+      padding: 1em;
+      border-bottom: solid 1px #f5f5f5; }
+      .selectBox .dropdown-menu .dropdown-item:last-child {
+        border-bottom: none; }
+      .selectBox .dropdown-menu .dropdown-item .network-title {
+        padding: 0;
+        margin: 0; }
+    .selectBox .dropdown-menu .dropdown-item.active, .selectBox .dropdown-menu .dropdown-item:active {
+      text-decoration: none;
+      position: relative;
+      color: #1e2026;
+      background: none; }
+      .selectBox .dropdown-menu .dropdown-item.active:before, .selectBox .dropdown-menu .dropdown-item:active:before {
+        position: absolute;
+        content: url("../img/check-icon.svg");
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        right: 1em;
+        top: 50%;
+        margin-top: -12px; }
   .selectBox.show .btn-dropdown::after {
     -webkit-transform: translateY(-50%) rotate(180deg);
         -ms-transform: translateY(-50%) rotate(180deg);
@@ -123,10 +158,6 @@ input.form-control {
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0); }
-    .selectBox.show .dropdown-menu .dropdown-item {
-      padding: 1em; }
-    .selectBox.show .dropdown-menu .dropdown-item.active, .selectBox.show .dropdown-menu .dropdown-item:active {
-      text-decoration: none; }
 
 .network-box {
   min-height: 5em; }
