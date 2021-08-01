@@ -161,31 +161,7 @@ h1, h2, h3, h4 {
   }
 }
 
-.modal-content-wrapper {
-  font-size: 14px;
-  background-color: white;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  overflow: hidden;
-  button {
-    //font-size: 0.875em;
-    padding: 1.14286em 0.857143em;
-    height: auto;
 
-    margin: 0;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 1px solid rgb(230, 232, 234);
-    border-image: initial;
-    outline: none;
-    text-decoration: none;
-    background: transparent;
-    &:hover {
-      background-color: rgba(240, 185, 11, 0.06);
-    }
-  }
-}
 
 
 .single-img {
@@ -238,6 +214,57 @@ h1, h2, h3, h4 {
   }
   .option-lable {
     font-size: .875em;
+  }
+}
+
+.modal-content-wrapper {
+  padding: 1em;
+  font-size: 14px;
+
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  overflow: hidden;
+  button.active {
+    &:before {
+      position: absolute;
+      content: url("../img/check-icon.svg");
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+      right: 1em;
+      top: 50%;
+      margin-top: -12px;
+    }
+  }
+  button {
+    position: relative;
+    padding: 1.14286em 0.857143em;
+    height: auto;
+    margin: 0;
+    text-align: left;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid rgb(230, 232, 234);
+    border-image: initial;
+    outline: none;
+    text-decoration: none;
+    background: transparent;
+    background-color: white;
+    &:first-child {
+      border-radius: 1em 1em 0 0;
+    }
+    &:last-child {
+      border-radius: 0 0 1em 1em;
+    }
+
+
+    .title-suspended {
+      font-size: .75em;
+    }
+    &:hover {
+      background-color: rgba(240, 185, 11, 0.06);
+    }
   }
 }
 

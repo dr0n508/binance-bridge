@@ -56,12 +56,31 @@
   }
 }
 
-input.form-control {
+input.form-control.custom-input {
   border: 1px solid rgb(2, 192, 118);
   border-radius: 8px;
   font-size: 2.5em;
   color: $text;
   background-color: #f5f5f5;
+}
+
+.input-group.input-group-modal {
+  padding: 1em;
+  background-color: white;
+  border-radius: 1em;
+  .input-group-text {
+    background-color: $bg;
+    border: none;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  input.form-control {
+    border: none;
+    background-color: $bg;
+    cursor: pointer;
+  }
 }
 
 .badge.badge-primary.custom-badge {
