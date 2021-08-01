@@ -237,6 +237,13 @@ h1, h2, h3, h4 {
     }
   }
   button {
+    //d-flex justify-content-between align-items-center
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
     position: relative;
     padding: 1.14286em 0.857143em;
     height: auto;
