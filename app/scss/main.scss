@@ -145,7 +145,7 @@ h1, h2, h3, h4 {
   }
   .add-network {
     font-size: .75em;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
   }
   .you-will-receive {
     font-size: .75em;
@@ -162,6 +162,11 @@ h1, h2, h3, h4 {
 }
 
 .modal-content-wrapper {
+  font-size: 14px;
+  background-color: white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  overflow: hidden;
   button {
     //font-size: 0.875em;
     padding: 1.14286em 0.857143em;
@@ -176,6 +181,9 @@ h1, h2, h3, h4 {
     outline: none;
     text-decoration: none;
     background: transparent;
+    &:hover {
+      background-color: rgba(240, 185, 11, 0.06);
+    }
   }
 }
 
@@ -200,6 +208,36 @@ h1, h2, h3, h4 {
     color: rgb(118, 128, 143);
     font-weight: 400;
     line-height: normal;
+  }
+}
+
+.select-asset {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 1.5em;
+  padding: .5em 1.5em .5em 1em;
+  background: $bg;
+  border-radius: 8px;
+  &:after {
+    position: absolute;
+    content: url("../img/right-arrow.svg");
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    right: 1em;
+    top: 50%;
+    margin-top: -12px;
+  }
+  .option-img {
+    margin-right: 0.571429em;
+    img {
+      width: 16px;
+      height: 16px;
+      float: left;
+    }
+  }
+  .option-lable {
+    font-size: .875em;
   }
 }
 
