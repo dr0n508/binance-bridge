@@ -4,37 +4,12 @@
 @import "dropd";
 @import "modal";
 
-::-webkit-input-placeholder {
-	color: lighten($text, 25%);
-}
-::-moz-placeholder {
-	color: lighten($text, 25%);
-}
-:-ms-input-placeholder {
-	color: lighten($text, 25%);
-}
-::-ms-input-placeholder {
-	color: lighten($text, 25%);
-}
-::placeholder {
-	color: lighten($text, 25%);
-}
-::-moz-selection {
-	background-color: $accent;
-	color: #fff;
-}
-::selection {
-	background-color: $accent;
-	color: #fff;
-}
 * {
 	margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
-	height: 100%;
-}
+html, body {height: 100%;}
 
 body {
 	font-size: 16px;
@@ -62,17 +37,11 @@ input, button, textarea {
 	}
 }
 
-input, textarea {
-	padding: 10px;
-}
+input, textarea {padding: 10px;}
 
-textarea {
-	resize: none;
-}
+textarea {resize: none;}
 
-ul {
-	list-style: none;
-}
+ul {list-style: none;}
 
 a {
 	text-decoration: none;
@@ -158,29 +127,6 @@ h1, h2, h3, h4 {
       width: 1.5em;
       height: 1.5em;
     }
-  }
-}
-
-.single-img {
-  margin-right: 0.5em;
-  img {
-    width: 2em;
-    height: 2em;
-  }
-}
-
-.option-desciption {
-  .option-symbol {
-    font-size: 1em;
-    color: rgb(30, 32, 38);
-    font-weight: bold;
-    line-height: normal;
-  }
-  .option-name {
-    font-size: 0.857143em;
-    color: rgb(118, 128, 143);
-    font-weight: 400;
-    line-height: normal;
   }
 }
 

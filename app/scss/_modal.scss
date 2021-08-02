@@ -1,7 +1,6 @@
 .modal-content-wrapper {
   padding: 1em;
   font-size: 14px;
-
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   overflow: hidden;
@@ -21,7 +20,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     position: relative;
     padding: 1.14286em 0.857143em;
     height: auto;
@@ -34,7 +32,6 @@
     border-image: initial;
     outline: none;
     text-decoration: none;
-    background: transparent;
     background-color: white;
     &:first-child {
       border-radius: 1em 1em 0 0;
@@ -47,6 +44,27 @@
     }
     &:hover {
       background-color: rgba(240, 185, 11, 0.06);
+    }
+  }
+  .single-img {
+    margin-right: 0.5em;
+    img {
+      width: 2em;
+      height: 2em;
+    }
+  }
+  .option-desciption {
+    .option-symbol {
+      font-size: 1em;
+      color: rgb(30, 32, 38);
+      font-weight: bold;
+      line-height: normal;
+    }
+    .option-name {
+      font-size: 0.857143em;
+      color: rgb(118, 128, 143);
+      font-weight: 400;
+      line-height: normal;
     }
   }
 }
