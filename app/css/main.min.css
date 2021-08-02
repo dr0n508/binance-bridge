@@ -125,6 +125,24 @@ input.form-control.custom-input::-webkit-inner-spin-button {
   padding: 1em;
   cursor: pointer;
   background-color: white; }
+  .selectBox .network-box {
+    min-height: 5em; }
+    .selectBox .network-box .network-img img {
+      width: 40px;
+      height: 40px; }
+    .selectBox .network-box .badge-wrapper {
+      margin-left: 5px; }
+      .selectBox .network-box .badge-wrapper .badge {
+        font-size: .6em; }
+    .selectBox .network-box .network-title {
+      margin-top: 16px;
+      font-size: .875em;
+      padding-right: 56px;
+      line-height: 1.2; }
+    .selectBox .network-box .suspended-title {
+      margin-top: 16px;
+      font-size: .875em;
+      line-height: 1.2; }
   .selectBox .btn-dropdown {
     width: 24px;
     height: 24px;
@@ -218,25 +236,15 @@ input.form-control.custom-input::-webkit-inner-spin-button {
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0); }
-
-.network-box {
-  min-height: 5em; }
-  .network-box .network-img img {
-    width: 40px;
-    height: 40px; }
-  .network-box .badge-wrapper {
-    margin-left: 5px; }
-    .network-box .badge-wrapper .badge {
-      font-size: .6em; }
-  .network-box .network-title {
-    margin-top: 16px;
-    font-size: .875em;
-    padding-right: 56px;
-    line-height: 1.2; }
-  .network-box .suspended-title {
-    margin-top: 16px;
-    font-size: .875em;
-    line-height: 1.2; }
+  @media only screen and (max-width: 576px) {
+    .selectBox {
+      padding: 0.5em; }
+      .selectBox .btn-dropdown {
+        right: 9px;
+        bottom: 9px; }
+      .selectBox .network-box .network-title {
+        padding-right: 25px;
+        font-size: .75em; } }
 
 .modal-content-wrapper {
   font-size: 14px;
@@ -438,6 +446,11 @@ h1, h2, h3, h4 {
   @media only screen and (max-width: 768px) {
     .main-block {
       padding: 1em; } }
+  @media only screen and (max-width: 576px) {
+    .main-block .col.wrapper-btn {
+      padding: 0; }
+      .main-block .col.wrapper-btn .btn.btn-secondary.custom-btn {
+        padding: .5rem; } }
 
 .select-asset {
   cursor: pointer;
