@@ -112,6 +112,10 @@ input.form-control.custom-input::-webkit-inner-spin-button {
   .modal.modal-custom .modal-content .modal-body {
     overflow: hidden auto; }
 
+@media only screen and (max-width: 576px) {
+  .modal.modal-custom .modal-content {
+    max-height: 80vh; } }
+
 .title-select-box {
   font-size: .75em; }
 

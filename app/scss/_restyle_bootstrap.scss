@@ -128,4 +128,9 @@ input.form-control.custom-input::-webkit-inner-spin-button {
       overflow: hidden auto;
     }
   }
+  @media only screen and (max-width: 576px) {
+    .modal-content {
+      max-height: 80vh;
+    }
+  }
 }
