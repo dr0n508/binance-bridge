@@ -55,8 +55,14 @@ input.form-control.custom-input {
   color: #1e2026;
   background-color: #f5f5f5; }
 
+input.form-control.custom-input::-webkit-outer-spin-button,
+input.form-control.custom-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
 .input-group.input-group-modal {
   padding: 1em;
+  min-height: 70px;
   background-color: white;
   -webkit-border-radius: 1em;
           border-radius: 1em; }
@@ -85,6 +91,26 @@ input.form-control.custom-input {
 
 .progress-bar.custom-progress-bar {
   background-color: #f0b90b; }
+
+.modal.modal-custom .modal-dialog {
+  height: 50vh; }
+
+.modal.modal-custom .modal-content {
+  background-color: #f5f5f5;
+  -webkit-border-radius: 1em;
+          border-radius: 1em;
+  max-height: 50vh; }
+  .modal.modal-custom .modal-content .modal-header {
+    padding: 0;
+    position: relative;
+    border-bottom: none; }
+    .modal.modal-custom .modal-content .modal-header button.close {
+      position: absolute;
+      right: 1em;
+      top: .5em;
+      z-index: 9; }
+  .modal.modal-custom .modal-content .modal-body {
+    overflow: hidden auto; }
 
 .title-select-box {
   font-size: .75em; }
@@ -213,7 +239,6 @@ input.form-control.custom-input {
     line-height: 1.2; }
 
 .modal-content-wrapper {
-  padding: 1em;
   font-size: 14px;
   -webkit-border-top-left-radius: 1em;
           border-top-left-radius: 1em;
@@ -333,6 +358,10 @@ a {
 h1, h2, h3, h4 {
   font-weight: inherit; }
 
+.main {
+  padding-top: 5em;
+  padding-bottom: 5em; }
+
 .animate, a {
   -webkit-transition: background 150ms ease 0s, color 150ms ease 0s, border 150ms ease 0s;
   -o-transition: background 150ms ease 0s, color 150ms ease 0s, border 150ms ease 0s;
@@ -343,6 +372,7 @@ h1, h2, h3, h4 {
 
 .info-block {
   padding: 2.5em;
+  height: 100%;
   background: white;
   -webkit-border-radius: 1em;
           border-radius: 1em;
@@ -368,6 +398,12 @@ h1, h2, h3, h4 {
   .info-block .hexagon-wrapper {
     margin-top: 3em;
     margin-bottom: 3em; }
+  @media only screen and (max-width: 992px) {
+    .info-block .hexagon-wrapper {
+      display: none !important; } }
+  @media only screen and (max-width: 768px) {
+    .info-block {
+      padding: 1em; } }
 
 .main-block {
   padding: 2.5em 5em;
@@ -394,6 +430,14 @@ h1, h2, h3, h4 {
       margin-right: 5px;
       width: 1.5em;
       height: 1.5em; }
+  @media only screen and (max-width: 992px) {
+    .main-block {
+      margin-bottom: 2em;
+      padding-right: 2.5em;
+      padding-left: 2.5em; } }
+  @media only screen and (max-width: 768px) {
+    .main-block {
+      padding: 1em; } }
 
 .select-asset {
   cursor: pointer;
