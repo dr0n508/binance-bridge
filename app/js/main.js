@@ -1,8 +1,16 @@
 $(document).ready(function() {
 
+    //dropdown
     $(".selectBox").on("click", function(e) {
 
         $(this).toggleClass("show");
+
+    });
+
+    //close modal after clicked token
+    $(".filter-item").on("click", function() {
+
+        $("#assetModal").modal('hide');
 
     });
 
