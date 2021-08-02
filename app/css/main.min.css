@@ -71,6 +71,12 @@ input.form-control.custom-input {
     background-color: #f5f5f5;
     cursor: pointer; }
 
+.form-group {
+  margin-bottom: 1.5em; }
+  .form-group label {
+    font-size: .75em;
+    margin-bottom: 0; }
+
 .badge.badge-primary.custom-badge {
   color: #f0b90b;
   background-color: rgba(240, 185, 11, 0.1);
@@ -200,11 +206,62 @@ input.form-control.custom-input {
     font-size: .875em;
     line-height: 1.2; }
 
-.form-group {
-  margin-bottom: 1.5em; }
-  .form-group label {
-    font-size: .75em;
-    margin-bottom: 0; }
+.modal-content-wrapper {
+  padding: 1em;
+  font-size: 14px;
+  -webkit-border-top-left-radius: 1em;
+          border-top-left-radius: 1em;
+  -webkit-border-top-right-radius: 1em;
+          border-top-right-radius: 1em;
+  overflow: hidden; }
+  .modal-content-wrapper button.active:before {
+    position: absolute;
+    content: url("../img/check-icon.svg");
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    right: 1em;
+    top: 50%;
+    margin-top: -12px; }
+  .modal-content-wrapper button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    padding: 1.14286em 0.857143em;
+    height: auto;
+    margin: 0;
+    text-align: left;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #e6e8ea;
+    -webkit-border-image: initial;
+         -o-border-image: initial;
+            border-image: initial;
+    outline: none;
+    text-decoration: none;
+    background: transparent;
+    background-color: white; }
+    .modal-content-wrapper button:first-child {
+      -webkit-border-radius: 1em 1em 0 0;
+              border-radius: 1em 1em 0 0; }
+    .modal-content-wrapper button:last-child {
+      -webkit-border-radius: 0 0 1em 1em;
+              border-radius: 0 0 1em 1em; }
+    .modal-content-wrapper button .title-suspended {
+      font-size: .75em; }
+    .modal-content-wrapper button:hover {
+      background-color: rgba(240, 185, 11, 0.06); }
 
 ::-webkit-input-placeholder {
   color: #565c6d; }
@@ -384,64 +441,5 @@ h1, h2, h3, h4 {
       float: left; }
   .select-asset .option-lable {
     font-size: .875em; }
-
-.modal-content-wrapper {
-  padding: 1em;
-  font-size: 14px;
-  -webkit-border-top-left-radius: 1em;
-          border-top-left-radius: 1em;
-  -webkit-border-top-right-radius: 1em;
-          border-top-right-radius: 1em;
-  overflow: hidden; }
-  .modal-content-wrapper button.active:before {
-    position: absolute;
-    content: url("../img/check-icon.svg");
-    width: 12px;
-    height: 12px;
-    display: inline-block;
-    right: 1em;
-    top: 50%;
-    margin-top: -12px; }
-  .modal-content-wrapper button {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-    padding: 1.14286em 0.857143em;
-    height: auto;
-    margin: 0;
-    text-align: left;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 1px solid #e6e8ea;
-    -webkit-border-image: initial;
-         -o-border-image: initial;
-            border-image: initial;
-    outline: none;
-    text-decoration: none;
-    background: transparent;
-    background-color: white; }
-    .modal-content-wrapper button:first-child {
-      -webkit-border-radius: 1em 1em 0 0;
-              border-radius: 1em 1em 0 0; }
-    .modal-content-wrapper button:last-child {
-      -webkit-border-radius: 0 0 1em 1em;
-              border-radius: 0 0 1em 1em; }
-    .modal-content-wrapper button .title-suspended {
-      font-size: .75em; }
-    .modal-content-wrapper button:hover {
-      background-color: rgba(240, 185, 11, 0.06); }
-
-/* Always at the end*/
 
 /*# sourceMappingURL=css/main.min.css.map */

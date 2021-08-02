@@ -7,8 +7,8 @@
 }
 
 .btn.btn-primary.custom-btn {
-  background-color: #f0b90b;
-  border-color: #f0b90b;
+  background-color: $accent;
+  border-color: $accent;
   &:hover {
     background-color: #f8d12f;
     border-color: #f8d12f;
@@ -44,11 +44,6 @@
 
 .btn.btn-secondary.custom-btn.dropdown-toggle {
   &:after {
-    //margin: 0;
-    //vertical-align: initial;
-    //width: 21px;
-    //height: 21px;
-    //top: 20px;
     transform: translateY(-50%) rotate(0deg);
     transition: all 0.2s ease-in-out;
     border: none;
@@ -80,6 +75,14 @@ input.form-control.custom-input {
     border: none;
     background-color: $bg;
     cursor: pointer;
+  }
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+  label {
+    font-size: .75em;
+    margin-bottom: 0;
   }
 }
 
